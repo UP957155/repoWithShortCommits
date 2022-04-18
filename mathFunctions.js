@@ -19,7 +19,7 @@ console.log(baseConvert(3000,2,8));
 
 //3. Write a JavaScript function to convert a decimal number to binary, hexadecimal or octal number. 
 
-decToBho  = function(n, base) {
+decToBhho  = function(n, base) {
  
     if (n < 0) {
       n = 0xFFFFFFFF + n + 1;
@@ -39,9 +39,9 @@ default:
 return("Wrong input.........");  
 }  
 };
-console.log(dec_to_bho(120,'B'));
-console.log(dec_to_bho(120,'H'));
-console.log(dec_to_bho(120,'O'));
+console.log(decToBho(130,'B'));
+console.log(decToBhho(130,'H'));
+console.log(decToBhho(130,'O'));
 
 
 //4. Write a JavaScript function to generate a random integer.
