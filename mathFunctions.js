@@ -112,7 +112,7 @@ console.log(gcd_two_numbers(9, 3));
 
 //9. Write a JavaScript function to find the GCD (greatest common divisor) of more than 2 integers.
 
-function gcdMoreThanTwoNumbers(input) {
+function gcd_more_than_two_numbers(input) {
     if (toString.call(input) !== "[object Array]")  
           return  false;  
     var len, a, b;
@@ -140,8 +140,8 @@ function gcdTwoNumbers(x, y) {
     }
   return x;
 };
-console.log(gcdMoreThanTwoNumbers([3,15,27]));
-console.log(gcdMoreThanTwoNumbers([5,10,15,25]));
+console.log(gcd_more_than_two_numbers([1,13,23]));
+console.log(gcd_more_than_two_numbers([5,10,15,25]));
   
 //10. Write a JavaScript function to get the least common multiple (LCM) of two numbers.
 
