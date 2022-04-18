@@ -85,13 +85,13 @@ console.log(fi_max([-12,-34,0,-56,-1]));
 
 //7. Write a JavaScript function to find the lowest value in an array.
 
-function min(input) {
+function find_min(input) {
     if (toString.call(input) !== "[object Array]")  
       return false;
  return Math.min.apply(null, input);
 };
-console.log(min([12,34,56,1]));
-console.log(min([-12,-34,0,-56,-1]));
+console.log(find_min([12,36,54,1]));
+console.log(find_min([-12,-34,0,-56,-1]));
 
 //8. Write a JavaScript function to get the greatest common divisor (gcd) of two integers.
 
