@@ -67,7 +67,7 @@ console.log(precise_round(10.49999,2));
 
 //5. Write a JavaScript function to check whether a value is an integer or not.
 
-function isInt(num) {
+function is_integer(num) {
   
     if (typeof num !== 'number')
         return false; 
@@ -76,11 +76,11 @@ function isInt(num) {
           parseInt(Number(num)) == num && 
           !isNaN(parseInt(num, 10));
 };
-console.log(isInt(23));
-console.log(isInt(4e2));
-console.log(isInt(NaN));
-console.log(isInt(23.75));
-console.log(isInt(-23));
+console.log(is_integer(27));
+console.log(is_integer(4e2));
+console.log(is_integer(NaN));
+console.log(is_integer(23.77));
+console.log(is_integer(-23));
  
 //6. Write a JavaScript function to check to check whether a variable is numeric or not.
 
