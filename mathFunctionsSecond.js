@@ -1,6 +1,6 @@
 //1. Write a JavaScript function to get the least common multiple (LCM) of more than 2 integers.
 
-function lcmMoreThanTwoNumbers(inputArray) {
+function lcm_more_than_two_numbers(inputArray) {
     if (toString.call(inputArray) !== "[object Array]")  
         return  false;  
  var r1 = 0, r2 = 0;
@@ -22,8 +22,8 @@ function lcmMoreThanTwoNumbers(inputArray) {
     }
   return inputArray[l - 1];
 };
-console.log(lcmMoreThanTwoNumbers([100,90,80,7])); 
-console.log(lcmMoreThanTwoNumbers([5,10,15,25]));
+console.log(lcm_more_than_two_numbers([100,89,75,7])); 
+console.log(lcm_more_than_two_numbers([5,10,15,25]));
 
 //2. Write a JavaScript function to find out if a number is a natural number or not.
 
