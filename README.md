@@ -1,0 +1,2 @@
+# repoWithShortCommits
+For academic reasons
