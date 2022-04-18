@@ -27,15 +27,16 @@ console.log(lcmMoreThan_TwoNumbers([5,10,15,25]));
 
 //2. Write a JavaScript function to find out if a number is a natural number or not.
 
-function isNatural(n) {
+function is_natural(n) {
 	   if (typeof n !== 'number') 
 	        return 'Not a number'; 
 			
 	return (n >= 0.0) && (Math.floor(n) === n) && n !== Infinity;
 };
-console.log(isNatural(-15));
-console.log(isNatural(1));console.log(isNatural(10.22));
-console.log(isNatural(10/0));
+console.log(is_natural(-13));
+console.log(is_natural(3));
+console.log(is_natural(10.22));
+console.log(is_natural(10/0));
 
 //3. Write a JavaScript function to test if a number is a power of 2.
 
