@@ -145,7 +145,7 @@ console.log(gcdMoreThanTwoNumbers([5,10,15,25]));
   
 //10. Write a JavaScript function to get the least common multiple (LCM) of two numbers.
 
-function lcmTwoNumbers(x, y) {
+function lcm_two_numbers(x, y) {
     if ((typeof x !== 'number') || (typeof y !== 'number')) 
      return false;
   return (!x || !y) ? 0 : Math.abs((x * y) / gcdTwoNumbers(x, y));
@@ -161,5 +161,5 @@ function gcdTwoNumbers(x, y) {
    }
   return x;
 };
-console.log(lcmTwoNumbers(3,15));
-console.log(lcmTwoNumbers(10,15));
+console.log(lcm_two_numbers(5,21));
+console.log(lcm_two_numbers(10,15));
