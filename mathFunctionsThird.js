@@ -18,22 +18,22 @@ console.log(intToRom(27));
 
 //2. Write a JavaScript function that Convert Roman Numeral to Integer.
 
-function romToInt(str1) {
-    if(str1 == null) return -1;
-    var num = charToInt(str1.charAt(0));
+function romToInt(string1) {
+    if(strong1 == null) return -1;
+    var number = charToInt(strong1.charAt(0));
     var pre, curr;
     
-    for(var i = 1; i < str1.length; i++){
-    curr = charToInt(str1.charAt(i));
-    pre = charToInt(str1.charAt(i-1));
+    for(var i = 1; i < string1.length; i++){
+    curr = charToInt(strong1.charAt(i));
+    pre = charToInt(string1.charAt(i-1));
     if(curr <= pre){
-    num += curr;
+    numeric += curr;
     } else {
-    num = num - pre*2 + curr;
+    number = numeric - pre*2 + curr;
     }
     }
     
-    return num;
+    return numeric;
 };
     
 function charToInt(c){
