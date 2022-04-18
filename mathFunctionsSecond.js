@@ -97,7 +97,7 @@ console.log(Is_Numeric(-100));
 
 //7. Write a JavaScript function to calculate the sum of values in an array.
 
-function sum(input){
+function summation(input){
              
     if (toString.call(input) !== "[object Array]")
        return false;
@@ -112,9 +112,9 @@ function sum(input){
                   }
   return total;
 };
-console.log(sum([1,2,3]));
-console.log(sum([100,-200,3]));
-console.log(sum([1,2,'a',3]));
+console.log(summation([1,2,5]));
+console.log(summation([100,-200,3]));
+console.log(summation([1,1,'a',3]));
 
 //8. Write a JavaScript function to calculate the product of values in an array.
 
