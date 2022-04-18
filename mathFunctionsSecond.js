@@ -54,16 +54,16 @@ console.log(isPowerOf2(256));
 
 //Ref.https://bit.ly/3zxAhnH
 
-function preciseRound(n, r) {
+function precise_round(n, r) {
     let int = Math.floor(n).toString()
     if (typeof n !== 'number' || typeof r !== 'number') return 'Not a Number'
     if (int[0] == '-' || int[0] == '+') int = int.slice(int[1], int.length)
     return n.toPrecision(int.length + r)
 }
-console.log(preciseRound(12.375,2));
-console.log(preciseRound(-10.3079499, 3));
-console.log(preciseRound(10.49999,0));
-console.log(preciseRound(10.49999,2));
+console.log(precise_round(12.575,2));
+console.log(precise_round(-10.3075499, 5));
+console.log(precise_round(10.49999,0));
+console.log(precise_round(10.49999,2));
 
 //5. Write a JavaScript function to check whether a value is an integer or not.
 
