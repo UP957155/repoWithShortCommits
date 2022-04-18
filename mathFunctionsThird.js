@@ -78,14 +78,14 @@ console.log(result);
 
 //5. Write a JavaScript function to make currency math (add, subtract, multiply, division etc.).
 
-var n1 = '$40.14';
-var n2 = '$22.58';
+var number1 = '$40.14';
+var numeric2 = '$22.58';
 var regP = /[^0-9.-]+/g;
 
-console.log(parseFloat(n1.replace(regP, '')) + parseFloat(n2.replace(regP, '')));
-console.log(parseFloat(n1.replace(regP, '')) - parseFloat(n2.replace(regP, '')));
-console.log(parseFloat(n1.replace(regP, '')) * parseFloat(n2.replace(regP, '')));
-console.log(parseFloat(n1.replace(regP, '')) / parseFloat(n2.replace(regP, '')));
+console.log(parseFloat(number1.replace(regP, '')) + parseFloat(numeric2.replace(regP, '')));
+console.log(parseFloat(number1.replace(regP, '')) - parseFloat(number2.replace(regP, '')));
+console.log(parseFloat(numeric1.replace(regP, '')) * parseFloat(numeric2.replace(regP, '')));
+console.log(parseFloat(number1.replace(regP, '')) / parseFloat(number2.replace(regP, '')));
 
 //6. Write a JavaScript function to calculate the nth root of a number.
 
