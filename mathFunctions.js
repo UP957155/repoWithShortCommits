@@ -75,13 +75,13 @@ console.log(decimal_num(2200, 2));
 
 //6. Write a JavaScript function to find the highest value in an array.
 
-function max(input) {
+function findMax(input) {
     if (toString.call(input) !== "[object Array]")  
       return false;
  return Math.max.apply(null, input);
 };
-console.log(max([12,34,56,1]));
-console.log(max([-12,-34,0,-56,-1]));
+console.log(findMax([12,36,56,1]));
+console.log(findMax([-12,-38,0,-56,-1]));
 
 //7. Write a JavaScript function to find the lowest value in an array.
 
