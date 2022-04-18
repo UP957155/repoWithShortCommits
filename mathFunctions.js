@@ -1,10 +1,10 @@
 //1. Write a JavaScript function to convert a binary number to a decimal number.
 
-function binaryToDecimal(bstr) { 
+function binary_to_decimal(bstr) { 
     return parseInt((bstr + '').replace(/[^01]/gi, ''), 2);
 };
-console.log(binaryToDecimal('110011'));
-console.log(binaryToDecimal('100'));
+console.log(binary_to_decimal('110111'));
+console.log(binary_to_decimal('100'));
 
 //2. Write a JavaScript function to convert a number from one base to another (base between 2 and 36).
 
