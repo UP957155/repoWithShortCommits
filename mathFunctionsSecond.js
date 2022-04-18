@@ -138,13 +138,13 @@ console.log(product_of_array([1,1,'a',3]));
    
 //9. Create a Pythagorean function in JavaScript.
 
-function pythagorean(x, y) {
+function pythagorean_method(x, y) {
     if ((typeof x !== 'number') || (typeof y !== 'number')) 
         return false; 
   return Math.sqrt(x * x + y * y);
 };
-console.log(pythagorean(2, 4));
-console.log(pythagorean(3, 4));
+console.log(pythagorean_method(2, 6));
+console.log(pythagorean_method(3, 5));
 
 
 //10. Write a JavaScript program to evaluate binomial coefficients.
