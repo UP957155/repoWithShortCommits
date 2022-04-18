@@ -46,7 +46,7 @@ console.log(decToBhho(130,'O'));
 
 //4. Write a JavaScript function to generate a random integer.
 
-rand = function(min, max) {
+randomInteger = function(min, max) {
     if (min==null && max==null)
       return 0;    
     
@@ -56,10 +56,10 @@ rand = function(min, max) {
     }
   return min + Math.floor(Math.random() * (max - min + 1));
 };
-console.log(rand(20,1));
-console.log(rand(1,10));
-console.log(rand(6));
-console.log(rand());
+console.log(randomInteger(40,1));
+console.log(randomInteger(1,10));
+console.log(randomInteger(8));
+console.log(randomInteger());
 
 //5. Write a JavaScript function to format a number up to specified decimal places.
 
