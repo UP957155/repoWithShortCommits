@@ -95,7 +95,7 @@ console.log(FindMin([-12,-36,0,-56,-1]));
 
 //8. Write a JavaScript function to get the greatest common divisor (gcd) of two integers.
 
-function gcdTwoNumbers(x, y) {
+function gcd_two_numbers(x, y) {
     if ((typeof x !== 'number') || (typeof y !== 'number')) 
       return false;
     x = Math.abs(x);
@@ -107,8 +107,8 @@ function gcdTwoNumbers(x, y) {
     }
   return x;
 }; 
-console.log(gcdTwoNumbers(12, 13));
-console.log(gcdTwoNumbers(9, 3));
+console.log(gcd_two_numbers(14, 15));
+console.log(gcd_two_numbers(9, 3));
 
 //9. Write a JavaScript function to find the GCD (greatest common divisor) of more than 2 integers.
 
