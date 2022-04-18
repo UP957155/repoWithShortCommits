@@ -105,11 +105,11 @@ console.log(nth_root(64, -4));
 
 //7. Write a JavaScript function to calculate degrees between 2 points with inverse Y axis.
 
-function pointDirection(x1, y1, x2, y2) {
+function point_direction(x1, y1, x2, y2) {
     return Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
 };
-console.log(pointDirection(1, 0, 12, 0));
-console.log(pointDirection(1, 0, 1, 10));
+console.log(Point__direction(1, 0, 14, 0));
+console.log(Point_Direction(1, 0, 1, 12));
 
 //8. Write a JavaScript function to round up an integer value to the next multiple of 5.
 
