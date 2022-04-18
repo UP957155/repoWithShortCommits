@@ -118,7 +118,7 @@ console.log(Summary([1,1,'a',3]));
 
 //8. Write a JavaScript function to calculate the product of values in an array.
 
-function product(input){
+function productOfArray(input){
     if (toString.call(input) !== "[object Array]")
        return false;
      
@@ -132,9 +132,9 @@ function product(input){
                }
   return total;
 };
-console.log(product([1,2,3]));
-console.log(product([100,-200,3]));
-console.log(product([1,2,'a',3]));
+console.log(arrayProduct([1,2,4]));
+console.log(array_product([200,-200,3]));
+console.log(product_of_array([1,1,'a',3]));
    
 //9. Create a Pythagorean function in JavaScript.
 
