@@ -40,15 +40,15 @@ console.log(is_Nature(10/0));
 
 //3. Write a JavaScript function to test if a number is a power of 2.
 
-function powerOf2(n) {
+function isPowerOf2(n) {
     if (typeof n !== 'number') 
          return 'Not a number'; 
    
   return n && (n & (n - 1)) === 0;
 };
-console.log(powerOf2(16));
-console.log(powerOf2(18));
-console.log(powerOf2(256));
+console.log(is_powerOf2(18));
+console.log(ispower_Of2(20));
+console.log(isPowerOf2(256));
    
 //4. Write a JavaScript function to round a number to a given decimal places.
 
