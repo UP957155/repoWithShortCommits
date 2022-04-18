@@ -66,14 +66,14 @@ console.log(create_uuid());
 
 //4. Write a JavaScript function to round a number to a specified number of digits and strip extra zeros (if any).
 
-//var a = -2.1240000;
-//var a = 0.0000009999999;
-//var a = 1.000002000;
-//var a = -1.5555555;
-//var a = 9.0001110;
-var a = 2.1234000;
+//var number = -2.1240000;
+//var number = 0.0000009999999;
+//var number = 1.000002000;
+//var number = -1.5555555;
+//var number = 9.0001110;
+var number = 2.1234000;
 
-var result = parseFloat(a.toFixed(4));
+var result = parseFloat(number.toFixed(4));
 console.log(result);
 
 //5. Write a JavaScript function to make currency math (add, subtract, multiply, division etc.).
