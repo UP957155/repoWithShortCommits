@@ -53,7 +53,7 @@ console.log(romToInt('CI'));
 
 //3. Write a JavaScript function to create a UUID identifier.
 
-function createUUID(){
+function create_uuid(){
     var dt = new Date().getTime();
     var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
         var r = (dt + Math.random()*16)%16 | 0;
@@ -62,7 +62,7 @@ function createUUID(){
     });
     return uuid;
 };
-console.log(createUUID());
+console.log(create_uuid());
 
 //4. Write a JavaScript function to round a number to a specified number of digits and strip extra zeros (if any).
 
