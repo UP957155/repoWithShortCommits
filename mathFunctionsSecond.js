@@ -149,7 +149,7 @@ console.log(pythagorean_method(3, 5));
 
 //10. Write a JavaScript program to evaluate binomial coefficients.
 
-function binomial(n, k) {
+function binomial_coefficients(n, k) {
     if ((typeof n !== 'number') || (typeof k !== 'number')) 
         return false; 
    var coeff = 1;
@@ -157,5 +157,5 @@ function binomial(n, k) {
    for (x = 1; x <= k; x++) coeff /= x;
    return coeff;
 };
-console.log(binomial(8,3));
-console.log(binomial(10,2));
+console.log(binomial_coefficients(10,3));
+console.log(binomial_coefficients(10,4));
