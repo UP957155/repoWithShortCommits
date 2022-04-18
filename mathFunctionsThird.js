@@ -89,7 +89,7 @@ console.log(parseFloat(number1.replace(regP, '')) / parseFloat(number2.replace(r
 
 //6. Write a JavaScript function to calculate the nth root of a number.
 
-function nthRoot(x, n)
+function nth_root(x, n)
    {
     ng = n % 2;
     if((ng == 1) || x<0)
@@ -100,8 +100,8 @@ function nthRoot(x, n)
     if(Math.abs(x - n) < 1 && (x > 0 === n > 0))
       return ng ? -r : r; 
    }
-console.log(nthRoot(64, 2));
-console.log(nthRoot(64, -2));
+console.log(nth_root(66, 2));
+console.log(nth_root(64, -4));
 
 //7. Write a JavaScript function to calculate degrees between 2 points with inverse Y axis.
 
