@@ -84,16 +84,16 @@ console.log(is_Integer(-23));
  
 //6. Write a JavaScript function to check to check whether a variable is numeric or not.
 
-function isNumeric(num) {
+function is_numeric(num) {
     return !isNaN(parseFloat(num)) && isFinite(num);
 };
   
-console.log(isNumeric(12));
-console.log(isNumeric('abcd'));
-console.log(isNumeric('12'));
-console.log(isNumeric(' '));
-console.log(isNumeric(1.20));
-console.log(isNumeric(-200));
+console.log(isNum(10));
+console.log(is_Numeric('abcd'));
+console.log(is_numeric('12'));
+console.log(isnumeric(' '));
+console.log(is_Numeric(1.40));
+console.log(Is_Numeric(-100));
 
 //7. Write a JavaScript function to calculate the sum of values in an array.
 
