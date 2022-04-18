@@ -8,14 +8,14 @@ console.log(binary_to_decimal('100'));
 
 //2. Write a JavaScript function to convert a number from one base to another (base between 2 and 36).
 
-var baseConvert = function(number, initialBase, changeBase) {
+var base_convert_num = function(number, initialBase, changeBase) {
     if ((initialBase && changeBase) <2 || (initialBase && changeBase)>36)
      return 'Base between 2 and 36';
     
     return parseInt(number + '', initialBase).toString(changeBase);
 };
-console.log(base_convert('E164',16,8));
-console.log(base_convert(1000,2,8));
+console.log(base_convert_num('E164',16,8));
+console.log(base_convert_num(2000,2,8));
 
 //3. Write a JavaScript function to convert a decimal number to binary, hexadecimal or octal number. 
 
