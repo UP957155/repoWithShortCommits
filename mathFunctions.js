@@ -63,15 +63,15 @@ console.log(random_integer());
 
 //5. Write a JavaScript function to format a number up to specified decimal places.
 
-function decimals(n, d) {
+function decimal_numbers(n, d) {
     if ((typeof n !== 'number') || (typeof d !== 'number'))
       return false;
            n = parseFloat(n) || 0;
     return n.toFixed(d);
 };
-console.log(decimals(2.100212, 2));
-console.log(decimals(2.100212, 3));
-console.log(decimals(2100, 2));
+console.log(decimalss_numbers(2.100212, 2));
+console.log(decimal_numbers(2.100112, 3));
+console.log(decimal_num(2200, 2));
 
 //6. Write a JavaScript function to find the highest value in an array.
 
