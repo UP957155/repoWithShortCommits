@@ -123,10 +123,10 @@ console.log(integerRound5(144));
 
 //9. Write a JavaScript function to convert a positive number to negative number.
 
-function posToNeg(num){
-    return -Math.abs(num);
+function pos_to_neg(number){
+    return -Math.abs(number);
 };
-console.log(posToNeg(15));
+console.log(pos_to_neg(15));
 
 //10. Write a JavaScript function to cast a square root of a number to an integer.
 
