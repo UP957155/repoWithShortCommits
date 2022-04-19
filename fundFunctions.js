@@ -83,10 +83,10 @@ console.log(json_to_csv([{ x: 100, y: 200 }, { x: 300, y: 400, z: 500 }, { x: 6 
 
 //#Source https://bit.ly/2neWfJ2
 
-const dig = (obj, target) =>
-  target in obj
-    ? obj[target]
-    : Object.values(obj).reduce((acc, val) => {
+const targetGivenValue = (object, target) =>
+  target in object
+    ? object[target]
+    : Object.values(object).reduce((acc, val) => {
         if (acc !== undefined) return acc;
         if (typeof val === 'object') return dig(val, target);
       }, undefined);
@@ -103,9 +103,9 @@ const dog = {
     "status": "success",
     "message": "https://images.dog.ceo/breeds/african/n02116738_1105.jpg"
 }
-console.log(dig(data, 'level3'));
-console.log(dig(data, 'level4'));
-console.log(dig(dog, 'message'));
+console.log(targetGivenValue(data, 'level3'));
+console.log(targetGivenValue(data, 'level4'));
+console.log(targetGivenValue(dog, 'message'));
 
 //7. Write a JavaScript program to converts a specified number to an array of digits.
 
