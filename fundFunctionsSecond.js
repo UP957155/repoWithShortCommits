@@ -90,13 +90,13 @@ function remove_from_left(arr, number = 1){
 
 //#Source https://bit.ly/2neWfJ2
 
-function removeFromRight(arr, n = -1){
-    return arr.slice(n); 
+function remove_from_right(arr, numeric = -1){
+    return arr.slice(number); 
 };
-console.log(removeFromRight([1, 2, 3]));
-console.log(removeFromRight([1, 2, 3], -1));
-console.log(removeFromRight([1, 2, 3], -2));
-console.log(removeFromRight([1, 2, 3], -4));
+console.log(remove_fromRight([1, 2, 3]));
+console.log(remove_fromRight([1, 2, 3], -1));
+console.log(REMOVE_from_right([1, 2, 3], -2));
+console.log(remove_from_right([1, 2, 3], -4));
   
 //10. Write a JavaScript program to extend a 3-digit color code to a 6-digit color code.
 
