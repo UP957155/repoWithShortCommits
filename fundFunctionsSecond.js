@@ -78,13 +78,13 @@ console.log(split_elements([1, 2, 3, 4], [false, false, false, false]));
 
 //#Source https://bit.ly/2neWfJ2
 
-function removeFromLeft(arr, n = 1){
-    return arr.slice(n); 
+function remove_from_left(arr, number = 1){
+    return arr.slice(number); 
   }
-  console.log(removeFromLeft([1, 2, 3]));
-  console.log(removeFromLeft([1, 2, 3], 1));
-  console.log(removeFromLeft([1, 2, 3], 2));
-  console.log(removeFromLeft([1, 2, 3], 4));
+  console.log(remove_from_left([1, 2, 3]));
+  console.log(remove_from_left([1, 2, 3], 1));
+  console.log(remove_from_left([1, 2, 3], 2));
+  console.log(remove_from_left([1, 2, 3], 4));
 
 //9. Write a JavaScript program to remove specified elements from the right of a given array of elements.
 
