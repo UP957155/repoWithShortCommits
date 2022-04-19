@@ -12,8 +12,8 @@ console.log(random_hex_color_code())
 
 //#Source https://bit.ly/2neWfJ2
 
-const removeNonASCII = str => str.replace(/[^\x20-\x7E]/g, '');
-console.log(removeNonASCII('äÄçÇéÉêw3resouröceÖÐþúÚ'));
+const remove_non_ascii = string => string.replace(/[^\x20-\x7E]/g, '');
+console.log(remove_non_ascii('äÄçÇéÉêw3resouröceÖÐþúÚ'));
 
 //3. Write a JavaScript program to convert the length of a given string in bytes.
 
