@@ -12,16 +12,16 @@ console.log(object_matches({ hair: 'long', beard: true }, { age: 26, hair: 'long
 
 //#Source https://bit.ly/2neWfJ2
 
-const copyToClipboard = str => {
-    const el = document.createElement('textarea');
-    el.value = str;
-    el.setAttribute('readonly', '');
-    el.style.position = 'absolute';
-    el.style.left = '-9999px';
+const copy_to_clipboard = string => {
+    const element = document.createElement('textarea');
+    element.value = string;
+    element.setAttribute('readonly', '');
+    element.style.position = 'absolute';
+    element.style.left = '-9999px';
     document.body.appendChild(el);
     const selected =
       document.getSelection().rangeCount > 0 ? document.getSelection().getRangeAt(0) : false;
-    el.select();
+    element.select();
     document.execCommand('copy');
     document.body.removeChild(el);
     if (selected) {
