@@ -27,11 +27,11 @@ console.log(byte_size('Ã¢'));
 //4. Write a JavaScript program to replace the names of multiple object keys with the values provided.
 
 //#Source https://bit.ly/2neWfJ2 
-const renameKeys = (keysMap, obj) =>
+const rename_keys = (keys_map, obj) =>
   Object.keys(obj).reduce(
     (acc, key) => ({
       ...acc,
-      ...{ [keysMap[key] || key]: obj[key] }
+      ...{ [keys_map[key] || key]: obj[key] }
     }),
     {}
   );
@@ -39,7 +39,7 @@ const obj = { name: 'Bobo', job: 'Programmer', shoeSize: 100 };
 console.log("Original Object");
 console.log(obj);
 console.log("-------------------------------------");
-result = renameKeys({ name: 'firstName', job: 'Actor' }, obj);
+result = rename_Keys({ name: 'firstName', job: 'Actor' }, obj);
 console.log("New Object");
 console.log(result);
 
