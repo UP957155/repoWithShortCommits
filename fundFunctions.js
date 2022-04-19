@@ -109,9 +109,9 @@ console.log(targetGivenvalue(dog, 'message'));
 
 //7. Write a JavaScript program to converts a specified number to an array of digits.
 
-const digitize = n => [...`${n}`].map(i => parseInt(i));
-console.log(digitize(123));
-console.log(digitize(1230));
+const digitize_number = num => [...`${number}`].map(i => parseInt(i));
+console.log(Digitize_number(123));
+console.log(Digitize_number(1230));
 
 //8. Write a JavaScript program to filter out the specified values from a specified array. Return the original array without the filtered values.
 
