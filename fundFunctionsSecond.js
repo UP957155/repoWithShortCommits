@@ -59,10 +59,10 @@ console.log(reduce_which(
 
 //#Source https://bit.ly/2neWfJ2
 
-const all = (arr, fn = Boolean) => arr.every(fn);
-console.log(all([4, 2, 3], x => x > 1)); 
-console.log(all([4, 2, 3], x => x < 1));
-console.log(all([1, 2, 3])); 
+const true_for_all = (aRRay, fn = Boolean) => array.every(fn);
+console.log(True_for_all([4, 2, 3], x => x > 1)); 
+console.log(True_for_all([4, 2, 3], x => x < 1));
+console.log(true_for_ALL([1, 2, 3]));
 
 //7. Write a JavaScript program to split values of two given arrays into two groups. If an element in filter is truthy, the corresponding element in the collection belongs to the first group; otherwise, it belongs to the second group.
 
