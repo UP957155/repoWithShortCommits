@@ -19,10 +19,10 @@ console.log(remove_non_ascii('äÄçÇéÉêw3resouröceÖÐþúÚ'));
 
 //#Source https://bit.ly/2neWfJ2
 
-const byteSize = str => new Blob([str]).size;
-console.log(byteSize('123456'));  
-console.log(byteSize('Hello World'));  
-console.log(byteSize('Ã¢')); 
+const byte_size = string => new Blob([string]).size;
+console.log(byte_size('123456'));  
+console.log(byte_size('Hello World'));  
+console.log(byte_size('Ã¢')); 
 
 //4. Write a JavaScript program to replace the names of multiple object keys with the values provided.
 
