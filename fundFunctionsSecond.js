@@ -47,11 +47,11 @@ console.log(result);
 
 //#Source https://bit.ly/2neWfJ2
 
-const reduceWhich = (arr, comparator = (a, b) => a - b) =>
-  arr.reduce((a, b) => (comparator(a, b) >= 0 ? b : a));
-console.log(reduceWhich([1, 3, 2])); 
-console.log(reduceWhich([10, 30, 20], (a, b) => b - a));  
-console.log(reduceWhich(
+const reduce_which = (array, comparator = (a, b) => a - b) =>
+  array.reduce((a, b) => (comparator(a, b) >= 0 ? b : a));
+console.log(reduce_which([1, 3, 2])); 
+console.log(reduce_which([10, 30, 20], (a, b) => b - a));  
+console.log(reduce_which(
   [{ name: 'Kevin', age: 16 }, { name: 'John', age: 20 }, { name: 'Ani', age: 19 }],
   (a, b) => a.age - b.age)); 
 
