@@ -102,13 +102,13 @@ console.log(remove_from_right([1, 2, 3], -4));
 
 //#Source https://bit.ly/2neWfJ2
 
-const extendHex = shortHex =>
+const extend_hex = short_hex =>
   '#' +
-  shortHex
-    .slice(shortHex.startsWith('#') ? 1 : 0)
+  short_hex
+    .slice(short_hex.startsWith('#') ? 1 : 0)
     .split('')
     .map(x => x + x)
     .join('');
 
-console.log(extendHex('#03f'));
-console.log(extendHex('05a'));
+console.log(extend_hex('#03f'));
+console.log(extend_hex('05a'));
