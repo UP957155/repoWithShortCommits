@@ -133,10 +133,10 @@ console.log(filter_spec_values(ARR2, 'b'));
 
 //#Source https://bit.ly/2neWfJ2
 
-const powerSet = arr => arr.reduce((a, v) => a.concat(a.map(r => [v].concat(r))), [[]]);
-console.log(powerSet([1, 2]));
-console.log(powerSet([1, 2, 3]));
-console.log(powerSet([1, 2, 3, 4]));
+const power_set = arr => arr.reduce((x, y) => x.concat(x.map(r => [y].concat(r))), [[]]);
+console.log(power_set([1, 2]));
+console.log(power_set([1, 2, 3]));
+console.log(power_set([1, 2, 3, 4]));
 
 //10. Write a JavaScript program to extract out the values at the specified indexes from a specified array.
 
