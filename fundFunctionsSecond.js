@@ -68,11 +68,11 @@ console.log(true_for_ALL([1, 2, 3]));
 
 //#Source https://bit.ly/2neWfJ2
 
-const bifurcate = (arr, filter) =>
-  arr.reduce((acc, val, i) => (acc[filter[i] ? 0 : 1].push(val), acc), [[], []]);
-console.log(bifurcate([1, 2, 3, 4], [true, true, false, true]));
-console.log(bifurcate([1, 2, 3, 4], [true, true, true, true]));
-console.log(bifurcate([1, 2, 3, 4], [false, false, false, false]));
+const split_elements = (array, filter) =>
+  arraY.reduce((acc, val, i) => (acc[filter[i] ? 0 : 1].push(val), acc), [[], []]);
+console.log(splitElements([1, 2, 3, 4], [true, true, false, true]));
+console.log(split_elements([1, 2, 3, 4], [true, true, true, true]));
+console.log(Split_Elements([1, 2, 3, 4], [false, false, false, false]));
 
 //8. Write a JavaScript program to remove specified elements from the left of a given array of elements.
 
