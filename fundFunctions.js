@@ -117,17 +117,17 @@ console.log(Digitize_number(1230));
 
 //#Source https://bit.ly/2neWfJ2
 
-const pull = (arr, ...args) => {
+const filter_spec_values = (array, ...args) => {
     let argState = Array.isArray(args[0]) ? args[0] : args;
-    let pulled = arr.filter((v, i) => !argState.includes(v));
-    arr.length = 0;
-    pulled.forEach(v => arr.push(v));
+    let pulled = array.filter((v, i) => !argState.includes(v));
+    array.length = 0;
+    pulled.forEach(v => array.push(v));
     return pulled;
 };
 let AAR1 = ['a', 'b', 'c', 'a', 'b', 'c'];
-console.log(pull(AAR1, 'a', 'c'));
+console.log(filter_spec_values(AAR1, 'a', 'c'));
 let ARR2 =  ['a', 'b', 'c', 'a', 'b', 'c'];
-console.log(pull(ARR2, 'b'));
+console.log(filter_spec_values(ARR2, 'b'));
   
 //9. Write a JavaScript program to combine the numbers of a given array into an array containing all combinations.
 
