@@ -48,18 +48,18 @@ console.log(csv_toArray('head1,head2\na,b\nc,d', ',', true));
 
 //#Source https://bit.ly/2neWfJ2
 
-const CSVtoJSON = (data, delimiter = ',') => {
-    const titles = data.slice(0, data.indexOf('\n')).split(delimiter);
-    return data
-      .slice(data.indexOf('\n') + 1)
+const csv_to_json = (string, delimiter = ',') => {
+    const titles = string.slice(0, string.indexOf('\n')).split(delimiter);
+    return string
+      .slice(string.indexOf('\n') + 1)
       .split('\n')
       .map(v => {
         const values = v.split(delimiter);
         return titles.reduce((obj, title, index) => ((obj[title] = values[index]), obj), {});
       });
 };
-console.log(CSVtoJSON('col1,col2\na,b\nc,d'));
-console.log(CSVtoJSON('col1;col2\na;b\nc;d', ';'));
+console.log(csv_to_json('col1,col2\na,b\nc,d'));
+console.log(csv_to_json('col1;col2\na;b\nc;d', ';'));
 
 //5. Write a JavaScript program to convert an array of objects to a comma-separated values (CSV) string that contains only the columns specified.
 
