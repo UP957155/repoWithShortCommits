@@ -142,17 +142,17 @@ console.log(power_set([1, 2, 3, 4]));
 
 //#Source https://bit.ly/2neWfJ2
 
-const pullAtIndex = (arr, pullArr) => {
+const pull_At_Index = (arr, pull_Array) => {
     let removed = [];
     let pulled = arr
-      .map((v, i) => (pullArr.includes(i) ? removed.push(v) : v))
-      .filter((v, i) => !pullArr.includes(i));
+      .map((v, i) => (pull_array.includes(i) ? removed.push(v) : v))
+      .filter((v, i) => !pull_array.includes(i));
     arr.length = 0;
     pulled.forEach(v => arr.push(v));
     return removed;
 };
 let arr1 = ['a', 'b', 'c', 'd', 'e', 'f'];
-console.log(pullAtIndex(arr1, [1, 3]));
+console.log(pull_at_index(arr1, [1, 3]));
 let arr2 =  [1, 2, 3, 4, 5, 6, 7];
-console.log(pullAtIndex(arr2, [4]));
+console.log(pull_at_index(arr2, [4]));
   
