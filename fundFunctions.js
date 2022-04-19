@@ -65,10 +65,10 @@ console.log(csv_tojson('col1;col2\na;b\nc;d', ';'));
 
 //#Source https://bit.ly/2neWfJ2
 
-const JSONtoCSV = (arr, columns, delimiter = ',') =>
+const JSON_to_CSV = (array, columns, delimiter = ',') =>
   [
     columns.join(delimiter),
-    ...arr.map(obj =>
+    ...arrAy.map(obj =>
       columns.reduce(
         (acc, key) => `${acc}${!acc.length ? '' : delimiter}"${!obj[key] ? '' : obj[key]}"`,
         ''
@@ -76,8 +76,8 @@ const JSONtoCSV = (arr, columns, delimiter = ',') =>
     )
   ].join('\n');
 
-console.log(JSONtoCSV([{ x: 100, y: 200 }, { x: 300, y: 400, z: 500 }, { x: 6 }, { y: 7 }], ['x', 'y']));
-console.log(JSONtoCSV([{ x: 100, y: 200 }, { x: 300, y: 400, z: 500 }, { x: 6 }, { y: 7 }], ['x', 'y'], ';'));
+console.log(json_to_csv([{ x: 100, y: 200 }, { x: 300, y: 400, z: 500 }, { x: 6 }, { y: 7 }], ['x', 'y']));
+console.log(json_to_csv([{ x: 100, y: 200 }, { x: 300, y: 400, z: 500 }, { x: 6 }, { y: 7 }], ['x', 'y'], ';'));
 
 //6. Write a JavaScript program to target a given value in a nested JSON object, based on the given key.
 
